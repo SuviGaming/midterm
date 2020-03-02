@@ -6,6 +6,9 @@
 
 <?php
 
+  include_once('./_includes/_utilities/_connect.php');
+  $conn = connect();
+
   $result = mysqli_query($conn, "SELECT * FROM comicbooks WHERE id = {$_GET['id']}");
   $row = mysqli_fetch_assoc($result);
 
