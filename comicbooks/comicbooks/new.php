@@ -6,7 +6,7 @@
   <hr>
 </header>
 
-<form action='<?= BASE_PATH ?>/comicbooks/insert.php' method='post'>
+<form action='./insert.php' method='post'>
 	<div class='form-group'>
 		<label>Title</label>
 		<input class="form-control" type="text" name="title">
