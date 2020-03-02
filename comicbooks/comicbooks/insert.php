@@ -9,12 +9,10 @@
     title,
     description,
     year,
-    actions,
   ) VALUES (
     '{$_POST['title']}',
     '{$_POST['description']}',
     '{$_POST['year']}',
-    '{$_POST['actions']}',
   )");
 
   session_start();

@@ -42,9 +42,9 @@
             echo "<td>{$row['year']}</td>";
             echo "<td>{$row['actions']}</td>";
             echo "<td>";
-            echo "<a href='.edit.php?id={$row['id']}'>edit</a>";
+            echo "<a href='./comicbooks/edit.php?id={$row['id']}'>edit</a>";
             echo " | ";
-            echo "<a href='.delete.php?id={$row['id']}'>delete</a>";
+            echo "<a href='./comicbooks/delete.php?id={$row['id']}'>delete</a>";
             echo"</td>";
             echo "</tr>";
           }
