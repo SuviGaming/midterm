@@ -29,7 +29,7 @@
 
 <form action='<?= BASE_PATH ?>/comicbooks/update.php' method='post'>
 
-	<input type="hidden" name="id" value="<?php echo (string)$row['id'] ?>">
+	<input type="hidden" name="id" value="<?php echo (string)$row['id']; ?>">
 
 	<div class='form-group'>
 		<label>Title</label>
