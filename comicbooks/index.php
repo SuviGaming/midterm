@@ -6,7 +6,7 @@
 
 <?php
 
-  require_once('./includes/_utilities/_connect.php');
+  require_once('./_includes/_utilities/_connect.php');
   $conn = connect();
 
   $result = mysqli_query($conn, "SELECT * FROM comicbooks WHERE id = {$_GET['id']}");
