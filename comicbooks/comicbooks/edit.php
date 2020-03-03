@@ -16,7 +16,7 @@
   <hr>
 </header>
 
-<form action='<?= BASE_PATH ?>/comicbooks/update.php' method='post'>
+<form action='./update.php' method='post'>
 
 	<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 
@@ -35,7 +35,7 @@
 		<input class="form-control" type="number" name="year" value="<?php echo $row['year']; ?>">
 	</div>
 
-	<button class="btn btn-primary" type="submit">Create</button>
+	<button class="btn btn-primary" type="submit">Update</button>
 </form>
 
 <?php include_once('../_includes/_partials/_footer.php') ?>
