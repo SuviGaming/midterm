@@ -7,9 +7,8 @@
   require_once('_utilities/_connect.php');
   $conn = connect();
 
-  $result = mysqli_query($conn, "SELECT * FROM midterm.comicbooks");
-  $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
-  var_dump($rows);
+  $result = mysqli_query($conn, "SELECT * FROM bookings WHERE id = {$_GET['id']}");
+  $row = mysqli_fetch_assoc($result);
 
 ?>
 
