@@ -8,7 +8,7 @@
   $res = mysqli_query($conn, "INSERT INTO midterm.comicbooks (
     title,
     description,
-    year,
+    year
   ) VALUES (
     '{$_POST['title']}',
     '{$_POST['description']}',
