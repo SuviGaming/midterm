@@ -5,8 +5,6 @@
   require_once('../_includes/_utilities/_connect.php');
   $conn = connect();
 
-  var_dump($_POST);
-
   $res = mysqli_query($conn, "UPDATE midterm.comicbooks SET
   title = '{$_POST['title']}',
   description = '{$_POST['description']}',

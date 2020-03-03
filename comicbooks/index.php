@@ -9,7 +9,6 @@
 
   $result = mysqli_query($conn, "SELECT * FROM midterm.comicbooks");
   $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
-  var_dump($rows);
 
 ?>
 
