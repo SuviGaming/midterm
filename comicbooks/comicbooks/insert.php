@@ -12,7 +12,7 @@
   ) VALUES (
     '{$_POST['title']}',
     '{$_POST['description']}',
-    '{$_POST['year']}',
+    '{$_POST['year']}'
   )");
 
   session_start();
