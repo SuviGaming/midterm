@@ -2,6 +2,17 @@
 
 <?php include_once('../_includes/_partials/_header.php') ?>
 
+<?php
+
+  require_once('_utilities/_connect.php');
+  $conn = connect();
+
+  $result = mysqli_query($conn, "SELECT * FROM comicbooks");
+  $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
+  var_dump($rows);
+
+?>
+
 <!--
   OBJECTIVE:
     1: Include the header and footer files (I have provided you the _config.php).
