@@ -7,7 +7,7 @@
   require_once('_utilities/_connect.php');
   $conn = connect();
 
-  $result = mysqli_query($conn, "SELECT * FROM comicbooks");
+  $result = mysqli_query($conn, "SELECT * FROM midterm.comicbooks");
   $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
   var_dump($rows);
 
