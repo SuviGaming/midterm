@@ -6,7 +6,7 @@
 
 <?php
 
-  include_once('<?= BASE_PATH ?>/_utilities/_connect.php');
+  require_once('_utilities/_connect.php');
   $conn = connect();
 
   $result = mysqli_query($conn, "SELECT * FROM comicbooks WHERE id = {$_GET['id']}");
