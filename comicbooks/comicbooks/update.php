@@ -2,7 +2,7 @@
 
   require_once('../_config.php');
 
-  include_once('../_includes/_utilities/_connect.php');
+  require_once('../_includes/_utilities/_connect.php');
   $conn = connect();
 
   session_start();
