@@ -16,8 +16,7 @@
   <hr>
 </header>
 
-<form action='<?= BASE_PATH ?>/comicbooks/insert.php' method='post'
-	  action="./update.php" method="post">
+<form action='<?= BASE_PATH ?>/comicbooks/update.php' method='post'>
 
 	<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 
