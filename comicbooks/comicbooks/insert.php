@@ -2,7 +2,7 @@
 
   require_once('../_config.php');
 
-  require_once('../_includes/_utilities/_connect.php');
+  require_once('_utilities/_connect.php');
   $conn = connect();
 
   $res = mysqli_query($conn, "INSERT INTO midterm.comicbooks (
