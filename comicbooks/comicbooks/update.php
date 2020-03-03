@@ -6,7 +6,7 @@
   $conn = connect();
 
   var_dump($_POST);
-  exit
+  exit;
 
   $res = mysqli_query($conn, "UPDATE midterm.comicbooks SET
   title = '{$_POST['title']}',
