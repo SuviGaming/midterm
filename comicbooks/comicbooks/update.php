@@ -5,6 +5,12 @@
   require_once('../_includes/_utilities/_connect.php');
   $conn = connect();
 
+  $res = mysqli_query($conn, "UPDATE midterm.comicbooks SET
+  title = '{$_POST['title']}',
+  description = '{$_POST['description']}',
+  year = {$_POST['year']}
+  WHERE id = {$_POST['id']}");
+
   session_start();
 
   if ($res) {
