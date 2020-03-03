@@ -2,9 +2,10 @@
 
 <?php include_once('./_includes/_partials/_header.php') ?>
 
-<?php include_once('./_includes/_partials/_footer.php') ?>
-
 <?php
+
+  require_once('_utilities/_connect.php');
+  $conn = connect();
 
   $result = mysqli_query($conn, "SELECT * FROM comicbooks WHERE id = {$_GET['id']}");
   $row = mysqli_fetch_assoc($result);
@@ -51,3 +52,5 @@
         ?>
   </tbody>
 </table>
+
+<?php include_once('./_includes/_partials/_footer.php') ?>
