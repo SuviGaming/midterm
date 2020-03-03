@@ -36,11 +36,6 @@
 		<input class="form-control" type="number" name="year" value="<?php echo $row['year']; ?>">
 	</div>
 
-	<div class='form-group'>
-		<label>Actions</label>
-		<input class="form-control" type="number" name="actions" value="<?php echo $row['actions']; ?>">
-	</div>
-
 	<button class="btn btn-primary" type="submit">Create</button>
 </form>
 
